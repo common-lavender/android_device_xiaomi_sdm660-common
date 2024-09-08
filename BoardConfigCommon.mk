@@ -181,6 +181,9 @@ BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 10485760
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
+
 # Extra Symlink
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
